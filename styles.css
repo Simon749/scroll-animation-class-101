@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Freight big pro';
 }
 
 html, body {
@@ -9,16 +10,46 @@ html, body {
     height: 100%;
 }
 
+#loader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#loader h1 {
+    font-size: 6.9vw;
+    font-weight: 100;
+    line-height: 5vw;
+    letter-spacing: -3px;
+}
+
 #page1 {
     height: 100vh;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #F5E41B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page1 h1 {
+    font-size: 6.9vw;
+    font-weight: 100;
+    line-height: 5vw;
+    letter-spacing: -3px;
 }
 
 #page2 {
     height: 100vh;
     width: 100%;
-    background-color: rgb(10, 20, 17);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +58,7 @@ html, body {
 #page3 {
     height: 100vh;
     width: 100%;
-    background-color: rgb(28, 110, 83);
+    background-color: white;
 }
 
 
