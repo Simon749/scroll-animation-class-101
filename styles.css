@@ -110,8 +110,8 @@ body {
 
 
 #page2 img {
-    height: 500px;
-    width: 400px;
+    height: 200px;
+    width: 100px;
     /* object-fit: cover;*/
     object-position: center;
     object-position: bottom;
@@ -220,7 +220,7 @@ body {
     height: 40vw;
     width: 30vw;
     position: relative;
-    margin: 40px 17px;
+    margin: 40px 19px;
     overflow: hidden;
 }
 
