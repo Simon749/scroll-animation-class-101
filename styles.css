@@ -5,7 +5,8 @@
     font-family: 'Freight big pro';
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -25,7 +26,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-   /* display: none; */
+    /* display: none; */
 }
 
 #loader video {
@@ -67,7 +68,7 @@ html, body {
     position: absolute;
     width: 100%;
     padding: 30px 50px;
-    z-index: 10;  
+    z-index: 10;
 }
 
 #nav svg path {
@@ -105,17 +106,13 @@ html, body {
     flex-direction: column;
 }
 
-#page3 {
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-}
+
 
 
 #page2 img {
     height: 500px;
     width: 400px;
-    object-fit: cover;
+    /* object-fit: cover;*/
     object-position: center;
     object-position: bottom;
 }
@@ -133,7 +130,7 @@ html, body {
     top: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
-    background:linear-gradient(to right, #a3ce0a48, #a3ce0a48, #a3ce0a48);
+    background: linear-gradient(to right, #a3ce0a48, #a3ce0a48, #a3ce0a48);
     box-shadow: 10px 0px 20px 20px #a3ce0a48;
     z-index: 8;
 }
@@ -168,6 +165,7 @@ html, body {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 .elem .moving .moving-in h5 {
     color: #000;
     display: inline-block;
@@ -192,14 +190,105 @@ html, body {
     }
 }
 
-.elem:hover .moving{
+.elem:hover .moving {
     transform: translate(0, -45%) scaleY(1);
 }
 
-.elem:hover .moving h5{
+.elem:hover .moving h5 {
     opacity: 1;
 }
 
-.elem:hover h2{
+.elem:hover h2 {
     font-style: italic;
+}
+
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.image-container {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.image-div {
+    height: 40vw;
+    width: 30vw;
+    position: relative;
+    margin: 40px 17px;
+    overflow: hidden;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0000001a;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all ease 0.5s;
+    z-index: 9;
+}
+
+
+.overlay p {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    line-height: 2.5vw;
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+
+.image-div:hover .overlay {
+    background-color: #000;
+}
+
+.image-div:hover .overlay p {
+    opacity: 1;
+}
+
+
+.image-div:hover img {
+    scale: 1.1;
+}
+
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#footer #foot {
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+}
+
+#footer h2 {
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-size: 2vw;
+    cursor: pointer;
 }
